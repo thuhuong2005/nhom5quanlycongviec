@@ -1,1 +1,205 @@
-
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+<head>
+<body>
+<div id="support">
+    <div id="iconChat"></div>
+    <ul id="option">
+      <li>
+        <a href="https://www.messenger.com/t/100444855586717">
+          <i class="fab fa-facebook-messenger"></i>
+          <span>Chat Facebook</span>
+        </a>
+      </li>
+      <li>
+        <a href="tel:0969883369">
+          <i class="fas fa-phone-alt"></i>
+          <span>0969 88 33 69</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://zalo.me/0898875569">
+          <i class="ticon-zalo-circle2"></i>
+          <span>Zalo</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://goo.gl/maps/e2BrP25pJ3VmCuwXA">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Tìm đường</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  </head>
+</body>
+<style.css>
+  a i.ticon-zalo-circle2 {
+    background: url(https://giaysihcm.com/wp-content/uploads/2021/11/icon-zalo-circle2.png) no-repeat !important;
+    background-size: contain !important;
+    width: 36px;
+    height: 36px;
+    display: block;
+}
+#support ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+#support a {
+    text-decoration: none;
+    color: #333;
+}
+ 
+ #support a span {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 15px;
+}
+/* Style Css */
+ 
+ 
+/* Icon Click */
+ 
+#support {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 60px;
+    height: 60px;
+    z-index: 99999;
+}
+ 
+#iconChat {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #189eff;
+    cursor: pointer;
+    border-radius: 99px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+}
+ 
+#iconChat:before {
+    content: "f3fe";
+    position: absolute;
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 700;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 10px;
+    left: 10px;
+    color: #189eff;
+    background: #fff;
+    border-radius: 99px;
+}
+ 
+ 
+/* Style Option Tab */
+ 
+#option {
+    background: center no-repeat #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+    width: 235px;
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 14px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 7px;
+    -webkit-transform-origin: 80% 105%;
+    -ms-transform-origin: 80% 105%;
+    transform-origin: 80% 105%;
+    -webkit-transition: ease-out .12s all;
+    -o-transition: ease-out .12s all;
+    transition: ease-out .12s all;
+    z-index: 10000;
+    display: none
+}
+ 
+#option:before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    right: 25px;
+    left: auto;
+    display: inline-block!important;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #FFF;
+    border-left: 10px solid transparent;
+}
+ 
+#option li {
+    width: 100%;
+}
+ 
+#option li a {
+    display: inline-block;
+    padding: 8px 10px;
+}
+ 
+#option li:hover {
+    background: #eee;
+}
+ 
+#option li a i {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: #189eff;
+    text-align: center;
+    border-radius: 99px;
+    color: #fff;
+    margin-right: 8px;
+}
+ 
+ 
+/* Background Icon */
+ 
+#option li a i.fa-facebook-messenger {
+    background: #0078FF;
+}
+ 
+#option li a i.fa-phone {
+    background: #4EB625;
+}
+ 
+#option li a i.fa-code {
+    background: #000;
+}
+ 
+#option li a i.fa-eye {
+    background: #FF643A;
+}
+</style.css>
+<script>
+    jQuery(document).ready(function () {
+        jQuery("#iconChat").click(function () {
+            jQuery('#option').toggle();
+        });
+        jQuery("#iconChat").click(function (e) {
+            e.stopPropagation();
+        });
+     
+        jQuery(document).click(function () {
+            jQuery("#option").hide();
+        });
+    });
+    </script>
